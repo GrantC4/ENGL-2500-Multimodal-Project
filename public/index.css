@@ -1,0 +1,200 @@
+:root {
+    /* Primary Colors */
+    --primary: #3498db; /* Blue */
+    --primary-dark: #2980b9;
+    --primary-light: #5dade2;
+
+    /* Secondary Colors */
+    --secondary: #e74c3c; /* Red */
+    --secondary-dark: #c0392b;
+    --secondary-light: #f1948a;
+
+    /* Accent Colors */
+    --accent: #f1c40f; /* Yellow */
+    --accent-dark: #f39c12;
+    --accent-light: #f7dc6f;
+
+    /* Success, Warning, and Error */
+    --success: #2ecc71; /* Green */
+    --success-dark: #27ae60;
+    --success-light: #58d68d;
+
+    --warning: #f39c12; /* Orange */
+    --warning-dark: #e67e22;
+    --warning-light: #f5b041;
+
+    --error: #e74c3c; /* Red */
+    --error-dark: #c0392b;
+    --error-light: #f1948a;
+
+    /* Neutral Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+
+    /* Backgrounds */
+    --background-light: #ffffff;
+    --background-dark: #012E40;
+    
+    /* Text Colors */
+    --text-light: #ffffff;
+    --text-dark: #2c3e50;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Gidole , sans-serif !important;
+    margin: 0;
+
+    max-width: 1280px;
+
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    z-index: 4;
+}
+
+
+#navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 45px;
+
+    border-style: none none solid none;
+    border-color: var(--text-dark);
+    border-width: 10px;
+    z-index: 10;
+    background-color: var(--background-light);
+}
+
+#navbar-nav-buttons-list {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically if needed */
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+#navbar-nav-buttons-list li {
+    margin-right: 25px;
+}
+
+#navbar-nav-buttons-list li:hover {
+    color: var(--primary-light);
+    cursor: pointer;
+}
+
+
+#navbar-arrow-down {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 5px;
+    cursor: default;
+    user-select: none;
+
+    font-size: 30px;
+    color: var(--background-light);
+    background-color: var(--text-dark);
+    border-radius: 50%;
+}
+
+#home-button {
+    margin: auto auto auto 25px;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    color: var(--primary-light);
+    cursor: pointer;
+
+    transition: .125s ease-in-out;
+}
+
+#landing-section {
+    height: 100px;
+    width: 100%;
+
+}
+
+.floating-background-section {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+
+/* About Me Section */
+
+#about-me-section {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#about-me-image {
+    width: 300px;
+    height: 400px;
+}
+
+#about-me-text-blurb {
+    margin-left: 25px;
+    width: 400px;
+    height: fit-content;
+}
+
+#previous-work-section {
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    flex-wrap: wrap;
+
+    margin: 20px auto auto auto;
+    justify-content: left;
+}
+
+.previous-work {
+    height: 250px;
+    width: 350px;
+
+
+    border-style: solid;
+    border-radius: 10px;
+    background-image: url(Wordle\ Card\ Grantclute\ Portfolio.png);
+    cursor: pointer;
+    margin: auto 10px;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.previous-work:hover {
+    transform: scale(1.01);
+}
